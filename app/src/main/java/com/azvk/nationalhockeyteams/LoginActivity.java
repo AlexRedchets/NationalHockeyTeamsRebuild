@@ -3,8 +3,6 @@ package com.azvk.nationalhockeyteams;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import butterknife.BindView;
-
 public class LoginActivity extends AppCompatActivity {
 
     @Override

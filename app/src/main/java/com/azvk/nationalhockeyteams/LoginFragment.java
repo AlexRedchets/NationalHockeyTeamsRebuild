@@ -8,9 +8,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -29,7 +27,7 @@ public class LoginFragment extends Fragment {
         return view;
     }
 
-    @OnClick(R.id.signUpButton)
+    @OnClick(R.id.signUpButtonLogin)
     public void registration(View view){
         Log.i(TAG, "Running registration method");
         Intent intent = new Intent(getContext(), RegistrationActivity.class);

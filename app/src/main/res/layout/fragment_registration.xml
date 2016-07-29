@@ -47,7 +47,7 @@
             android:layout_marginTop="30dp">
 
             <EditText
-                android:id="@+id/input_name"
+                android:id="@+id/input_name_reg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
@@ -60,7 +60,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/input_password"
+                android:id="@+id/input_password_reg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
@@ -73,7 +73,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/input_repassword"
+                android:id="@+id/input_repassword_reg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
@@ -83,7 +83,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/registerButton"
+            android:id="@+id/signUpButtonReg"
             android:text="@string/btn_sign_up"
             android:background="@color/colorPrimary"
             android:layout_marginTop="40dp"
