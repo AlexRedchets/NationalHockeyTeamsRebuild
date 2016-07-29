@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import org.greenrobot.eventbus.EventBus;
+
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -27,7 +29,18 @@ public class LoginFragment extends Fragment {
         return view;
     }
 
-    @OnClick(R.id.signUpButtonLogin)
+    @OnClick(R.id.login_button)
+    public void login(View view){
+
+        Log.i(TAG, "onLoginButtonClicked");
+
+        EventList eventList = new EventList();
+        eventList.setResultCode(111);
+        EventBus.getDefault().post(eventList);
+
+    }
+
+    @OnClick(R.id.signup_button_login)
     public void registration(View view){
         Log.i(TAG, "Running registration method");
         Intent intent = new Intent(getContext(), RegistrationActivity.class);

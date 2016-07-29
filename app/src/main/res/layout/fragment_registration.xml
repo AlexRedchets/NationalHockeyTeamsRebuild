@@ -1,27 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fragment_registration"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/windowBackground"
     tools:context="com.azvk.nationalhockeyteams.LoginActivity">
-    <!--<android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|enterAlways"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
-    </android.support.design.widget.AppBarLayout>-->
-
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
@@ -33,6 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="70dp">
             <ImageView
+                android:id="@+id/reg_image"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_centerHorizontal="true"
@@ -41,7 +27,7 @@
         </RelativeLayout>
 
         <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_layout_name"
+            android:id="@+id/input_layout_name_reg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp">
@@ -55,7 +41,7 @@
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_layout_password"
+            android:id="@+id/input_layout_password_reg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -68,7 +54,7 @@
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_layout_repassword"
+            android:id="@+id/input_layout_repassword_reg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -81,9 +67,9 @@
         </android.support.design.widget.TextInputLayout>
 
         <Button
+            android:id="@+id/signup_button_reg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/signUpButtonReg"
             android:text="@string/btn_sign_up"
             android:background="@color/colorPrimary"
             android:layout_marginTop="40dp"

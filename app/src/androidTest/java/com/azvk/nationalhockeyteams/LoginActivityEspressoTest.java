@@ -30,7 +30,7 @@ public class LoginActivityEspressoTest {
                 .perform(typeText("Cristiano Ronaldo"), closeSoftKeyboard());
         onView(withId(R.id.input_password_login))
                 .perform(typeText("1234"), closeSoftKeyboard());
-        onView(withId(R.id.signUpButtonLogin)).perform(click());
+        onView(withId(R.id.signup_button_login)).perform(click());
 
         onView(withId(R.id.input_name_reg))
                 .perform(typeText("Cristiano Ronaldo"), closeSoftKeyboard());
@@ -41,7 +41,7 @@ public class LoginActivityEspressoTest {
         onView(withId(R.id.input_password_reg))
                 .check(matches(withText("1234")));
 
-        onView(withId(R.id.signUpButtonReg)).perform(click());
+        onView(withId(R.id.signup_button_reg)).perform(click());
 
     }
 
