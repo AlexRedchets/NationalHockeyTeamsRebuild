@@ -15,9 +15,10 @@ public class MyPresenter {
 
     private static final String TAG = MyPresenter.class.getSimpleName();
 
+
     public MyPresenter(String username, String password) {
 
-        User user = new User(username, password);
+       /* User user = new User(username, password);
         UserClient userClient = Generator.createService(UserClient.class);
         Observable<Boolean> userObservable = userClient.userLogin(user);
         userObservable
@@ -34,7 +35,7 @@ public class MyPresenter {
                         Log.e("Error", throwable.getMessage());
                     });
 
-        /*Observable<List<Player>> russia_players = client.player("Russia");
+        Observable<List<Player>> russia_players = client.player("Russia");
         russia_players
                 .subscribeOn(Schedulers.newThread())
                 .observeOn(AndroidSchedulers.mainThread())

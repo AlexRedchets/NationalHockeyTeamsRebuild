@@ -16,6 +16,8 @@ import butterknife.OnClick;
 
 public class LoginFragment extends Fragment {
 
+    Presenter presenter;
+
     private  static final String TAG = LoginFragment.class.getSimpleName();
 
     public LoginFragment() {
@@ -26,6 +28,7 @@ public class LoginFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_login, container, false);
         ButterKnife.bind(this, view);
+        presenter = new PresenterImpl(this);
         return view;
     }
 
@@ -34,9 +37,7 @@ public class LoginFragment extends Fragment {
 
         Log.i(TAG, "onLoginButtonClicked");
 
-        EventList eventList = new EventList();
-        eventList.setResultCode(111);
-        EventBus.getDefault().post(eventList);
+
 
     }
 
