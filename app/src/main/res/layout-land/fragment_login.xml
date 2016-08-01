@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/windowBackground"
-    tools:context="com.azvk.nationalhockeyteams.LoginActivity">
+    tools:context="com.azvk.nationalhockeyteams.activities.LoginActivity">
     <!--
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

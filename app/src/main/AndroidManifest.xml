@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/MyMaterialTheme">
         <activity
-            android:name=".LoginActivity"
+            android:name=".activities.LoginActivity"
             android:windowSoftInputMode="stateHidden|adjustUnspecified"
             android:theme="@style/MyMaterialThemeNoActionBar">
             <intent-filter>
@@ -19,13 +19,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegistrationActivity"
-            android:parentActivityName=".LoginActivity"
+            android:name=".activities.RegistrationActivity"
+            android:parentActivityName=".activities.LoginActivity"
             android:windowSoftInputMode="stateHidden|adjustPan"
             android:label="@string/registration_activity_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".LoginActivity" />
+                android:value=".activities.LoginActivity" />
         </activity>
     </application>
 </manifest>
